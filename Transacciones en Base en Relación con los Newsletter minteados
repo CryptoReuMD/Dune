@@ -1,0 +1,10 @@
+SELECT
+ *
+FROM base.traces
+WHERE
+    (
+    "from" = 0x8eA0749eA936762b7A5BfDD6c0f5beAb02fF0Bf4
+    OR "to" = 0x8eA0749eA936762b7A5BfDD6c0f5beAb02fF0Bf4
+    ) AND "call_type" = 'call'
+ORDER BY
+  block_date DESC
