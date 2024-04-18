@@ -1,0 +1,6 @@
+SELECT
+  tx_from AS minter,
+  buyer
+FROM nft.mints
+WHERE
+  nft_contract_address IN (0x4b9bc31e1346498bb5ac671d36f2e5d2929d53cd, 0x4d66c9cd9ff097d44bf87fe1f08274040c26a7d2)
